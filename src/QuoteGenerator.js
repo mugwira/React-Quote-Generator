@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BiRefresh } from "react-icons/bi";
+import { AiOutlineReload } from "react-icons/ai";
 
 function QuoteGenerator() {
   const [content, setContent] = useState(null);
@@ -27,7 +27,7 @@ function QuoteGenerator() {
             <p className="italic text-sm py-2 text-gray-500">{author}</p>
           </div>
         ) : (
-          <div className="spinner text-center"></div>
+          <div className="spinner "></div>
         )}
       </div>
       <div className="btn pb-4">
@@ -35,7 +35,7 @@ function QuoteGenerator() {
           className="rounded flex items-center mx-auto bg-blue-300 hover:bg-blue-400 hover:text-white py-2 px-4 my-8 my-4"
           onClick={() => window.location.reload(false)}
         >
-          <BiRefresh className className="md:text-4xl" />
+          <AiOutlineReload className className="md:text-2xl" />
           <span className="mx-2">New Quote</span>
         </button>
       </div>
