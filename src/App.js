@@ -9,13 +9,27 @@ import './App.css'
 import {userSchema} from './Validations/UserValidation'
 import * as yup from 'yup'
 import LoggedIn from "./LoggedIn";
+import Nav from "./Nav";
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
-      
-      <Todo />
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <Switch>
+          <Route exact path="/">
+            <ProductList />
+          </Route>
+          <Route exact path="/todo">
+            <Todo />
+          </Route>
+          <Route exact path="/quotes">
+            <QuoteGenerator />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
