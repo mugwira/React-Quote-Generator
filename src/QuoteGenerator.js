@@ -4,6 +4,7 @@ import { AiOutlineReload } from "react-icons/ai";
 function QuoteGenerator() {
   const [content, setContent] = useState(null);
   const [author, setAuthor] = useState(null);
+  const [mounted , setMounted] =useState(true)
 
   useEffect(() => {
     fetch("http://quotable.io/random")
