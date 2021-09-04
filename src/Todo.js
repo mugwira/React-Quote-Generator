@@ -4,19 +4,27 @@ import { FaTrashAlt } from "react-icons/fa";
 function Todo() {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
-  const [todoErr, setTodoErr] = useState(false);
+  const [todoErr, setTodoErr] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (todo === "") {
+      let error = {
+        field_id: "todo",
+        message: "Please enter a task to do",
+      };
+      setTodoErr(error);
+    } else {
+      const newTodo = {
+        id: new Date().getTime(),
+        text: todo,
+        completed: false,
+      };
 
-    const newTodo = {
-      id: new Date().getTime(),
-      text: todo,
-      completed: false,
-    };
-
-    setTodos([...todos].concat(newTodo));
-    setTodo("");
+      setTodos([...todos].concat(newTodo));
+      setTodo("");
+      setTodoErr("");
+    }
   };
 
   const toggleComplete = (id) => {
@@ -40,9 +48,9 @@ function Todo() {
     setTodos(newTodos);
   };
   return (
-    <div className="bg-yellow-200 w-1/2 md:w-1/3 mx-auto rounded-lg mt-16">
+    <div className="my-todo bg-yellow-200 w-1/2 md:w-1/3 mx-auto rounded-lg mt-16 ">
       <form
-        className="text-sm md:flex justify-between items-center md:px-8 py-4 md:py-8"
+        className="text-sm md:flex justify-between items-center md:px-8 py-4 md:py-8 "
         onSubmit={handleSubmit}
       >
         <div className="my-input">
@@ -55,6 +63,9 @@ function Todo() {
             placeholder="Enter todo task"
             onChange={(e) => setTodo(e.target.value)}
           />
+          {todoErr && todoErr.field_id === "todo" ? (
+            <p className="text-red-600 text-center">{todoErr.message}</p>
+          ) : null}
         </div>
         <button
           className="text-sm m-4 md:py-2 md:px-4 bg-green-300 rounded hover:bg-green-200"

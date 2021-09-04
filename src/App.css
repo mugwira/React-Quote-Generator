@@ -25,5 +25,9 @@ body{
 }
 
 .left a:hover{
-    border-top: 2px solid orangered;
+    border-top: 1px solid orange;
+}
+
+.my-todo{
+    min-height: 24rem;
 }
