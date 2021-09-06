@@ -10,6 +10,7 @@ import {userSchema} from './Validations/UserValidation'
 import * as yup from 'yup'
 import LoggedIn from "./LoggedIn";
 import Nav from "./Nav";
+import About from "./About"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
         <Switch>
           <Route exact path="/">
             <ProductList />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
           <Route exact path="/todo">
             <Todo />

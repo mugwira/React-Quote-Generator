@@ -10,14 +10,18 @@ function Nav() {
           <h3>Claire</h3>
         </div>
         <div className="flex flex-col text-center my-6 space-y-4 md:flex-row items-center space-x-16 text-lg">
-          <Link to="/" className="hover:text-gray-300">
-            Products
+          
+          <Link to="/about" className="hover:text-gray-300">
+            About
           </Link>
           <Link to="/Todo" className="hover:text-gray-300">
             Todo
           </Link>
           <Link to="/Quotes" className="hover:text-gray-300">
             Quotes
+          </Link>
+          <Link to="/" className="hover:text-gray-300">
+            Products
           </Link>
         </div>
       </div>
