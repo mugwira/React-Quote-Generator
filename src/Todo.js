@@ -55,7 +55,7 @@ function Todo() {
       >
         <div className="my-input">
           <input
-            className="py-2 m-4 mb-4 rounded"
+            className="py-2 m-4 rounded "
             type="text"
             name="todo"
             id=""
@@ -85,7 +85,7 @@ function Todo() {
 
           <p style={todo.completed ? styled : null}>{todo.text}</p>
           <button
-            className="hover:text-red-500"
+            className="hover:text-red-500 m-4"
             onClick={() => handleDelete(todo.id)}
           >
             <FaTrashAlt />

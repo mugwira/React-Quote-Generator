@@ -5,12 +5,11 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function Nav() {
   return (
     <div className="my-nav text-gray-200 bg-gray-400 ">
-      <div className="my-links md:flex items-center justify-between py-8 px-32">
+      <div className="my-links md:flex items-center justify-between px-32">
         <div className="right text-2xl font-semi-bold italic">
           <h3>Claire</h3>
         </div>
         <div className="flex flex-col text-center my-6 space-y-4 md:flex-row items-center space-x-16 text-lg">
-          
           <Link to="/about" className="hover:text-gray-300">
             About
           </Link>
