@@ -6,7 +6,7 @@ function About() {
       <div className="left">
         <img className="my-pic" src="sucre.jpg" alt="" />
       </div>
-      <div className="right text-gray-100 flex flex-col my-16 items-center">
+      <div className="right text-gray-700 flex flex-col my-16 items-center">
         <h2 className="my-4 text-5xl">About Me</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo deleniti
