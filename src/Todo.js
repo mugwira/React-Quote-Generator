@@ -50,7 +50,7 @@ function Todo() {
   return (
     <div className="my-todo bg-yellow-200 w-1/2 md:w-1/3 mx-auto rounded-lg mt-16 ">
       <form
-        className="text-sm md:flex justify-between items-center md:px-8 py-4 md:py-8 "
+        className="text-sm md:flex justify-between items-center md:px-8 py-4 "
         onSubmit={handleSubmit}
       >
         <div className="my-input">
@@ -67,12 +67,14 @@ function Todo() {
             <p className="text-red-600 text-center">{todoErr.message}</p>
           ) : null}
         </div>
-        <button
-          className="text-sm m-4 md:py-2 md:px-4 bg-green-300 rounded hover:bg-green-200"
-          type="submit"
-        >
-          Add Task
-        </button>
+        <div className="add-task">
+          <button
+            className="text-sm m-4 md:py-2 px-4 bg-green-300 rounded hover:bg-green-200"
+            type="submit"
+          >
+            Add Task
+          </button>
+        </div>
       </form>
 
       {todos.map((todo) => (
@@ -85,7 +87,7 @@ function Todo() {
 
           <p style={todo.completed ? styled : null}>{todo.text}</p>
           <button
-            className="hover:text-red-500 m-4"
+            className="hover:text-red-500"
             onClick={() => handleDelete(todo.id)}
           >
             <FaTrashAlt />

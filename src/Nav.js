@@ -1,25 +1,24 @@
 import React from "react";
-import { link } from "react-router-dom";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
-    <div className="my-nav text-gray-200 bg-gray-400 ">
-      <div className="my-links md:flex items-center justify-between px-32">
+    <div className="my-nav text-blue-800 bg-gray-300 ">
+      <div className="my-links md:flex items-center justify-between py-4 px-32">
         <div className="right text-2xl font-semi-bold italic">
           <h3>Claire</h3>
         </div>
-        <div className="flex flex-col text-center my-6 space-y-4 md:flex-row items-center space-x-16 text-lg">
-          <Link to="/about" className="hover:text-gray-300">
-            About
+        <div className="flex flex-col md:flex-row items-center text-lg space-x-16">
+          <Link to="/about" className="hover:text-blue-600">
+            About 
           </Link>
-          <Link to="/Todo" className="hover:text-gray-300">
+          <Link to="/Todo" className="hover:text-blue-600">
             Todo
           </Link>
-          <Link to="/Quotes" className="hover:text-gray-300">
+          <Link to="/Quotes" className="hover:text-blue-600">
             Quotes
           </Link>
-          <Link to="/" className="hover:text-gray-300">
+          <Link to="/" className="hover:text-blue-600">
             Products
           </Link>
         </div>

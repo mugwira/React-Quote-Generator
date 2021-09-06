@@ -2,13 +2,13 @@ import React from "react";
 
 function About() {
   return (
-    <div className="about text-gray-100 grid grid-cols-2 mx-32 flex flex-row items-center mt-16">
-      <div className="left">
+    <div className="about text-gray-100 md:grid gap-8 grid-cols-2 text-gray-100 mx-32 mt-16">
+      <div className="left self-center">
         <img className="my-pic" src="sucre.jpg" alt="" />
       </div>
-      <div className="right text-gray-700 flex flex-col my-16 items-center">
-        <h2 className="my-4 text-5xl">About Me</h2>
-        <p>
+      <div className="right text-gray-700 flex flex-col self-center">
+        <h2 className="my-4 text-5xl text-blue-800">About Me</h2>
+        <p className="text-sm md:text-lg">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo deleniti
           eligendi cupiditate repellat, harum inventore sit voluptatem facere
           itaque aspernatur non enim reiciendis nihil blanditiis animi quisquam,
