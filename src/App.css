@@ -26,7 +26,7 @@ body{
     }
 }
 
-.left a:hover{
+. a:hover{
     border-top: 1px solid orange;
 }
 
