@@ -1,15 +1,19 @@
 import React from "react";
 import Typed from 'react-typed';
+import {Zoom ,Fade, Slide } from 'react-reveal';
+
 
 function About() {
   return (
     <div className="main">
      
     <div className="about text-gray-100 md:grid gap-8 grid-cols-2 text-gray-100 mx-32 mt-16">
-      
+      <Slide top>
       <div className="left self-center">
         <img className="my-pic" src="sucre.jpg" alt="" />
       </div>
+      </Slide>
+      <Fade right>
       <div className="right text-gray-700 flex flex-col self-center">
         <h2 className="my-4 text-5xl text-blue-800">About Me</h2>
         <p className="text-sm md:text-lg">
@@ -20,16 +24,20 @@ function About() {
           magnam temporibus doloremque!
         </p>
       </div>
+      </Fade>
+     
     </div>
     <div className="typed text-center text-4xl font-semi-bold text-red-600 my-8">
         <Typed
           strings={["Web Development",
+            "Front-End Dev",
             "Javascript",
             "React Js",
-            "JQuery"
+            "JQuery",
+            "Tailwind Css and Bootstrap"
         ]}
-        typeSpeed={60}
-        backSpeed={50}
+        typeSpeed={80}
+        backSpeed={40}
         loop
         />
       </div>
