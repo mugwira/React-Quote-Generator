@@ -8,12 +8,10 @@ function About() {
     <div className="main">
      
     <div className="about text-gray-100 md:grid gap-8 grid-cols-2 text-gray-100 mx-32 mt-16">
-      <Slide top>
       <div className="left self-center">
         <img className="my-pic" src="sucre.jpg" alt="" />
       </div>
-      </Slide>
-      <Fade right>
+      <Slide right>
       <div className="right text-gray-700 flex flex-col self-center">
         <h2 className="my-4 text-5xl text-blue-800">About Me</h2>
         <p className="text-sm md:text-lg">
@@ -24,7 +22,7 @@ function About() {
           magnam temporibus doloremque!
         </p>
       </div>
-      </Fade>
+      </Slide>
      
     </div>
     <div className="typed text-center text-4xl font-semi-bold text-red-600 my-8">
