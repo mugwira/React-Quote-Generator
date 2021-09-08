@@ -26,9 +26,6 @@ body{
     }
 }
 
-. a:hover{
-    border-top: 1px solid orange;
-}
 
 .my-todo{
     min-height: 24rem;

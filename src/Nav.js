@@ -9,8 +9,11 @@ function Nav() {
           <h3>Claire</h3>
         </div>
         <div className=" flex flex-col py-2 md:flex-row md:space-x-8 md:text-xl">
-          <Link to="/about" className="transition duration-200 hover:text-blue-600 py-2">
-            About 
+          <Link
+            to="/about"
+            className="transition duration-200 hover:text-blue-600 py-2"
+          >
+            About
           </Link>
           <Link to="/Todo" className="hover:text-blue-600 py-2">
             Todo
