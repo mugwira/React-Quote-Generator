@@ -20,8 +20,9 @@ function Login() {
   };
 
   return (
-    <div className="my-login text-center bg-blue-200 w-1/2 mx-auto min-h-screen">
+    <div className="my-login text-center bg-blue-200 w-1/4 mx-auto h-96 my-16">
       <div className="content p-8">
+          <h2 className="mb-8 font-semi-bold text-4xl">Login</h2>
         {showLoginButton ? (
           <GoogleLogin
             clientId={clientId}
