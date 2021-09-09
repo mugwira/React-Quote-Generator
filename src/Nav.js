@@ -24,6 +24,9 @@ function Nav() {
           <Link to="/" className="hover:text-blue-600 py-2">
             Products
           </Link>
+          <Link to="/Login" className="hover:text-blue-600 py-2">
+            Login
+          </Link>
         </div>
       </div>
     </div>

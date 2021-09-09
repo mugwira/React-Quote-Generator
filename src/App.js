@@ -9,6 +9,8 @@ import LoggedIn from "./LoggedIn";
 import Nav from "./Nav";
 import About from "./About"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Footer from "./Footer"
+import Login from "./Login";
 
 function App() {
   return (
@@ -28,8 +30,13 @@ function App() {
           <Route exact path="/quotes">
             <QuoteGenerator />
           </Route>
+          <Route exact path="/login">
+            <Login />
+          </Route>
         </Switch>
+      
       </div>
+     
     </Router>
   );
 }
