@@ -8,7 +8,7 @@ function Nav() {
         <div className="right text-2xl font-bold italic">
           <h3>Claire</h3>
         </div>
-        <div className=" flex flex-col py-2 md:flex-row md:space-x-8 md:text-xl">
+        <div className=" nav-linksflex flex-col py-2 md:flex-row md:space-x-8 md:text-xl">
           <Link
             to="/about"
             className="transition duration-200 hover:text-blue-600 py-2"
@@ -24,7 +24,7 @@ function Nav() {
           <Link to="/" className="hover:text-blue-600 py-2">
             Products
           </Link>
-          <Link to="/Login" className="hover:text-blue-600 py-2">
+          <Link to="/Login" className="hover:text-blue-600 py-0.5 px-3 rounded bg-yellow-500">
             Login
           </Link>
         </div>
