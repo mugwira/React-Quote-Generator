@@ -48,7 +48,7 @@ function Todo() {
     setTodos(newTodos);
   };
   return (
-    <div className="my-todo bg-yellow-200 w-1/2 md:w-1/3 mx-auto rounded-lg mt-16 ">
+    <div className="my-todo bg-yellow-200 w-60 md:w-96 mx-auto rounded-lg mt-16 ">
       <form
         className="text-sm md:flex justify-between items-center md:px-8 py-4 "
         onSubmit={handleSubmit}
@@ -69,7 +69,7 @@ function Todo() {
         </div>
         <div className="add-task">
           <button
-            className="text-sm m-4 md:py-2 px-4 bg-green-300 rounded hover:bg-green-200"
+            className="text-sm m-4 py-2 px-4 bg-green-300 rounded hover:bg-green-200"
             type="submit"
           >
             Add Task

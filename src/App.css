@@ -26,6 +26,9 @@ body{
     }
 }
 
+.my-login{
+    min-height: 400px;
+}
 .my-todo{
     min-height: 24rem;
 }
