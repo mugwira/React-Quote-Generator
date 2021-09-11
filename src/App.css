@@ -8,8 +8,8 @@ body{
     padding: 0 auto;
 }
 .spinner{
-    border: 5px solid lightgray;
-    border-top: 5px solid skyblue;
+    border: 5px solid rgb(214, 229, 235);
+    border-top: 5px solid rgb(92, 124, 185);
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -34,6 +34,6 @@ body{
 }
 .my-pic{
     width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    height: 400px;
+    
 }

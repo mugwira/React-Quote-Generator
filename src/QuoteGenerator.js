@@ -17,7 +17,7 @@ function QuoteGenerator() {
   }, []);
 
   return (
-    <div className="text-center bg-yellow-100 w-1/2 mx-auto my-16 rounded">
+    <div className="text-center bg-blue-200 w-1/2 mx-auto my-16 rounded">
       <h1 className="font-bold text-sm md:text-xl py-8 border-b px-4">
         Inspirational Quotes
       </h1>
@@ -33,7 +33,7 @@ function QuoteGenerator() {
       </div>
       <div className="btn pb-4">
         <button
-          className="rounded flex items-center mx-auto bg-blue-300 hover:bg-blue-400 hover:text-white py-2 px-4 my-8 my-4"
+          className="rounded flex items-center mx-auto bg-blue-600 text-white  hover:text-black py-2 px-4 my-8 my-4"
           onClick={() => window.location.reload(false)}
         >
           <AiOutlineReload className className="md:text-2xl" />
