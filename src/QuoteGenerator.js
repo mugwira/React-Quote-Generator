@@ -17,7 +17,7 @@ function QuoteGenerator() {
   }, []);
 
   return (
-    <div className="text-center bg-blue-200 w-1/2 mx-auto my-16 rounded">
+    <div className="text-center bg-gray-100 w-1/2 mx-auto my-16 rounded-lg">
       <h1 className="font-bold text-sm md:text-xl py-8 border-b px-4">
         Inspirational Quotes
       </h1>
