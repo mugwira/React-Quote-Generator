@@ -5,7 +5,7 @@ function Portifolio() {
   return (
     <div className="relative ">
         <section className="text-sm bg-white">
-            <div className="content px-4 md:w-1/2  mx-auto py-20">
+            <div className="content px-4 md:w-1/2 mx-auto py-20">
             <h2 className="font-semi-bold text-4xl py-4 text-center">Features</h2>
             <p className="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Unde mollitia excepturi esse quos! Reiciendis quasi nam quibusdam 
