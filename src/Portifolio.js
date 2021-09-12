@@ -22,7 +22,7 @@ function Portifolio() {
           />
         </div>
         <Slide right>
-        <div className="para">
+        <div className="">
           <h2 className="py-4 font-semibold text-2xl text-blue-600">
             Code Your Future
           </h2>
