@@ -22,7 +22,7 @@ function Nav() {
             Quotes
           </Link>
           <Link to="/" className="hover:text-gray-500 py-2">
-            Products
+            Portifolio
           </Link>
           <Link
             to="/Login"

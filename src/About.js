@@ -5,11 +5,11 @@ import {Zoom ,Fade, Slide } from 'react-reveal';
 
 function About() {
   return (
-    <div className="main">
+    <div className="main mx-auto p-2">
      
     <div className="about text-gray-100 md:grid gap-8 grid-cols-2 text-gray-100 mx-32 mt-16">
       <div className="left self-center">
-        <img className="my-pic" src="sucre.jpg" alt="" />
+        <img className="my-pic sm:w-2/3 md:w-2/5 sm:2/3 md:h-2/5" src="sucre.jpg" alt="" />
       </div>
       <Slide right>
       <div className="right text-gray-700 flex flex-col self-center">

@@ -11,6 +11,7 @@ import About from "./About"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Footer from "./Footer"
 import Login from "./Login";
+import Portifolio from "./Portifolio";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/">
-            <ProductList />
+            <Portifolio />
           </Route>
           <Route exact path="/about">
             <About />
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
+
         </Switch>
       
       </div>
