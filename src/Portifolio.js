@@ -31,10 +31,10 @@ function Portifolio() {
             ipsa eum similique quis optio quam dolorem sunt eligendi amet.
           </p>
           <div className="buttons flex gap-10 my-8">
-            <button className="bg-yellow-700 hover:bg-gray-100 px-6 py-2 rounded-md">
+            <button className="bg-yellow-700 hover:bg-gray-100 px-6 py-2 sm:px-6 sm:py-2 md:px-2 md:py-1 lg:px-6 lg:py-2 rounded-md">
               View More
             </button>
-            <button className="bg-gray-100 hover:bg-yellow-700 px-6 py-2 rounded-md">
+            <button className="bg-gray-100 hover:bg-yellow-700 px-6 py-2 sm:px-6 sm:py-2 md:px-2 md:py-1 lg:px-6 lg:py-2 rounded-md">
               Explore
             </button>
           </div>
