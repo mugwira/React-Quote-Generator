@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineMenu } from "react-icons/ai";
+
 
 function Nav() {
   return (
@@ -31,7 +33,9 @@ function Nav() {
             Login
           </Link>
         </div>
-        <div className="flex sm:hidden flex-1 justify-end cursor-pointer">Menu</div>
+        <div className="flex sm:hidden flex-1 justify-end cursor-pointer text-3xl font-bold">
+          <AiOutlineMenu />
+        </div>
       </div>
     </div>
   );

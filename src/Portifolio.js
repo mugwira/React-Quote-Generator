@@ -59,7 +59,7 @@ function Portifolio() {
       <section className="absolute w-full bg-gray-100 mt-20 py-16 ">
         <div className="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-12 lg:mt-20">
           <div className="content flex-col flex-1 items-center lg:items-start">
-            <h2 className="text-2xl font-semibold text-blue-600 py-4">
+            <h2 className="text-2xl font-semibold text-red-600 py-4">
               Believe and you can
             </h2>
             <p className="text-sm pb-8">
@@ -68,11 +68,11 @@ function Portifolio() {
               dolorum est magni a voluptates impedit, tempore illum pariatur.
             </p>
             <div className="second-btns flex flex-1 gap-10">
-              <button className="bg-yellow-700 hover:bg-red-200 px-6 py-2 
+              <button className="bg-red-600 hover:bg-red-200 px-6 py-2 
               sm:px-6 sm:py-2 md:px-2 md:py-1 lg:px-6 lg:py-2 rounded-md">
                 More
               </button>
-              <button className="bg-red-200 hover:bg-yellow-700 px-6 py-2 
+              <button className="bg-red-200 hover:bg-red-600 px-6 py-2 
               sm:px-6 sm:py-2 md:px-2 md:py-1 lg:px-6 lg:py-2 rounded-md">
                 Back
               </button>
@@ -88,7 +88,7 @@ function Portifolio() {
         </div>
       </section>
       <div className="relative hidden lg:block w-64 overflow-hidden
-       h-96 -right-3/4 rounded-t-full bg-blue-600 -bottom-40"></div>
+       h-96 -right-3/4 rounded-t-full bg-red-600 -bottom-40"></div>
     </div>
   );
 }
