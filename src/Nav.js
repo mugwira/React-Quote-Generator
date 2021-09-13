@@ -31,7 +31,7 @@ function Nav() {
             Login
           </Link>
         </div>
-        <div className="flex sm:hidden flex-1 justify-end">Menu</div>
+        <div className="flex sm:hidden flex-1 justify-end cursor-pointer">Menu</div>
       </div>
     </div>
   );
