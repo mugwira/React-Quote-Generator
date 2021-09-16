@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
+import {FaShoppingCart} from 'react-icons/fa';
 
 
 function Nav() {
@@ -26,11 +27,17 @@ function Nav() {
           <Link to="/" className="hover:text-gray-500 py-2">
             Portifolio
           </Link>
+          <Link to="Stocks" className="hover:text-gray-500 py-2">
+            Stocks
+          </Link>
           <Link
             to="/Login"
             className="text-white hover:bg-blue-400 py-0.5 px-3 rounded bg-blue-500"
           >
             Login
+          </Link>
+          <Link to="cart" className="text-lg hover:text-gray-500 py-2">
+            <FaShoppingCart />
           </Link>
         </div>
         <div className="flex sm:hidden flex-1 justify-end cursor-pointer text-3xl font-bold">

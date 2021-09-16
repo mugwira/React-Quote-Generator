@@ -1,6 +1,5 @@
 
 import Counter from "./Counter";
-import Main from "./Main";
 import ProductList from "./ProductList";
 import QuoteGenerator from "./QuoteGenerator";
 import Todo from "./Todo";
@@ -9,9 +8,10 @@ import LoggedIn from "./LoggedIn";
 import Nav from "./Nav";
 import About from "./About"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Footer from "./Footer"
 import Login from "./Login";
 import Portifolio from "./Portifolio";
+import StocksList from "./StocksList";
+import './StocksData'
 
 function App() {
   return (
@@ -33,6 +33,9 @@ function App() {
           </Route>
           <Route exact path="/login">
             <Login />
+          </Route>
+          <Route exact path="/stocks">
+            <StocksList />
           </Route>
 
         </Switch>
